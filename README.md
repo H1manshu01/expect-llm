@@ -291,6 +291,10 @@ The wider suite (same author, all zero-dependency):
 - **[`sse-wire`](https://www.npmjs.com/package/sse-wire)** — fetch-based SSE client; POST the request, stream the events.
 - **[`trickle-json`](https://www.npmjs.com/package/trickle-json)** — assemble streamed JSON into the best valid partial value on every chunk.
 - **[`coerce-json`](https://www.npmjs.com/package/coerce-json)** — repair and coerce that value to fit your Zod / JSON Schema, logging every fix.
+- **[`trickle-react`](https://www.npmjs.com/package/trickle-react)** — React hooks that render the streaming pipeline field by field.
+- **[`trickle-structured`](https://www.npmjs.com/package/trickle-structured)** — the **capstone**: one call from `fetch` to a validated object, composing the three pipeline packages.
+- **[`retry-wire`](https://www.npmjs.com/package/retry-wire)** — provider-aware retry and throttle for the request that opens the stream.
+- **[`context-budgeter`](https://www.npmjs.com/package/context-budgeter)** — fit a chat history into the model's context window.
 - **[`expect-llm`](https://www.npmjs.com/package/expect-llm)** — assert the result in Vitest or Jest. *(this package)*
 
 ```
