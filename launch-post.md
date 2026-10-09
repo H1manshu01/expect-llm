@@ -1,10 +1,10 @@
 ---
 title: "Assert LLM output in the test runner you already use"
-published: false
+published: true
 description: "Testing LLM output usually means a brittle hand-rolled JSON.parse + try/catch, or adopting a whole eval platform. expect-llm is the middle option: zero-dependency Vitest/Jest matchers for valid JSON, schema shape, required content, and an opt-in bring-your-own judge."
 tags: testing, typescript, ai, opensource
 cover_image: https://raw.githubusercontent.com/H1manshu01/expect-llm/main/assets/cover.png
-series: "Streaming structured output"
+canonical_url: https://dev.to/h1manshu01/assert-llm-output-in-the-test-runner-you-already-use-120p
 ---
 
 You have an LLM call in your product, and a test that exercises it. Now you have
