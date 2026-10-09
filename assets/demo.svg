@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="430" viewBox="0 0 720 430" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" role="img" aria-label="expect-llm assertions on LLM output passing one by one in a test runner">
+  <defs>
+    <style>
+      .m  { fill: #a371f7; }
+      .p  { fill: #8b949e; }
+      .c  { fill: #6e7681; }
+      .ok { fill: #27c93f; }
+      .t  { font-size: 14px; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="720" height="430" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <rect x="0" y="0" width="720" height="40" rx="12" fill="#161b22"/>
+  <rect x="0" y="28" width="720" height="12" fill="#161b22"/>
+  <circle cx="22" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="20" r="6" fill="#27c93f"/>
+  <text x="360" y="25" text-anchor="middle" font-size="13" fill="#8b949e">output.test.ts · vitest run</text>
+
+  <rect width="0" height="0">
+    <animate id="loop" attributeName="width" begin="0s;loop.end" dur="7.6s" values="0;0"/>
+  </rect>
+
+  <g opacity="0">
+    <animate attributeName="opacity" begin="loop.begin+0.2s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+    <text class="t c" x="28" y="82">// assert model output in the runner you already use</text>
+    <text class="t" x="28" y="110"><tspan class="p">expect.extend(</tspan><tspan class="m">llmMatchers</tspan><tspan class="p">)</tspan></text>
+  </g>
+
+  <!-- assertion 1 -->
+  <g opacity="0">
+    <animate attributeName="opacity" begin="loop.begin+1.3s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+    <text class="t" x="28" y="152"><tspan class="p">expect(out).</tspan><tspan class="m">toBeValidJSON</tspan><tspan class="p">()</tspan></text>
+  </g>
+  <text class="t ok" x="496" y="152" opacity="0">✓
+    <animate attributeName="opacity" begin="loop.begin+1.9s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+  </text>
+  <!-- assertion 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" begin="loop.begin+2.1s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+    <text class="t" x="28" y="184"><tspan class="p">expect(out).</tspan><tspan class="m">toMatchSchema</tspan><tspan class="p">(Invoice)</tspan></text>
+  </g>
+  <text class="t ok" x="496" y="184" opacity="0">✓
+    <animate attributeName="opacity" begin="loop.begin+2.7s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+  </text>
+  <!-- assertion 3 -->
+  <g opacity="0">
+    <animate attributeName="opacity" begin="loop.begin+2.9s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+    <text class="t" x="28" y="216"><tspan class="p">expect(d).</tspan><tspan class="m">toBeOneOf</tspan><tspan class="p">(["refund","deny"])</tspan></text>
+  </g>
+  <text class="t ok" x="496" y="216" opacity="0">✓
+    <animate attributeName="opacity" begin="loop.begin+3.5s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+  </text>
+  <!-- assertion 4 -->
+  <g opacity="0">
+    <animate attributeName="opacity" begin="loop.begin+3.7s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+    <text class="t" x="28" y="248"><tspan class="p">expect(a).</tspan><tspan class="m">toContainNone</tspan><tspan class="p">(["as an AI"])</tspan></text>
+  </g>
+  <text class="t ok" x="496" y="248" opacity="0">✓
+    <animate attributeName="opacity" begin="loop.begin+4.3s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+  </text>
+
+  <!-- footer -->
+  <g opacity="0">
+    <animate attributeName="opacity" begin="loop.begin+4.8s" dur="0.2s" to="1" fill="freeze"/>
+    <animate attributeName="opacity" begin="loop.begin+7.2s" dur="0.2s" to="0" fill="freeze"/>
+    <text class="t" x="28" y="290"><tspan class="ok">✓ 4 passed</tspan><tspan class="c">  ·  no model call</tspan></text>
+  </g>
+
+  <rect x="28" y="312" width="9" height="18" fill="#a371f7">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <text class="t c" x="44" y="326">expect(llmOutput).toMatchSchema(schema)</text>
+</svg>

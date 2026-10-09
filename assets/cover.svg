@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect x="0" y="0" width="1000" height="420" fill="#0d1117"/>
+  <rect x="0" y="0" width="1000" height="4" fill="#a371f7"/>
+
+  <text x="56" y="150" font-size="54" font-weight="700" fill="#e6edf3">expect<tspan fill="#a371f7">-llm</tspan></text>
+  <text x="58" y="192" font-size="18" fill="#c9d1d9">LLM output matchers for Vitest and Jest</text>
+  <text x="58" y="222" font-size="15" fill="#8b949e">assert JSON, schema, content, structure</text>
+
+  <g font-size="15" fill="#c9d1d9">
+    <rect x="56" y="256" width="150" height="34" rx="17" fill="#161b22" stroke="#30363d"/>
+    <text x="131" y="278" text-anchor="middle">zero-dependency</text>
+    <rect x="216" y="256" width="140" height="34" rx="17" fill="#161b22" stroke="#30363d"/>
+    <text x="286" y="278" text-anchor="middle">Vitest + Jest</text>
+    <rect x="366" y="256" width="92" height="34" rx="17" fill="#161b22" stroke="#30363d"/>
+    <text x="412" y="278" text-anchor="middle">~1.4 kB</text>
+  </g>
+
+  <text x="58" y="344" font-size="18"><tspan fill="#a371f7">$</tspan> <tspan fill="#c9d1d9">npm i -D expect-llm</tspan></text>
+
+  <rect x="512" y="56" width="432" height="308" rx="12" fill="#010409" stroke="#30363d" stroke-width="1"/>
+  <rect x="512" y="56" width="432" height="38" rx="12" fill="#161b22"/>
+  <rect x="512" y="82" width="432" height="12" fill="#161b22"/>
+  <circle cx="534" cy="75" r="5.5" fill="#ff5f56"/>
+  <circle cx="553" cy="75" r="5.5" fill="#ffbd2e"/>
+  <circle cx="572" cy="75" r="5.5" fill="#27c93f"/>
+  <text x="728" y="80" text-anchor="middle" font-size="12" fill="#8b949e">output.test.ts · vitest run</text>
+
+  <text x="532" y="126" font-size="13" fill="#6e7681">// assert model output, no eval platform</text>
+  <text x="532" y="152" font-size="14"><tspan fill="#8b949e">expect.extend(</tspan><tspan fill="#a371f7">llmMatchers</tspan><tspan fill="#8b949e">)</tspan></text>
+
+  <text x="532" y="188" font-size="13"><tspan fill="#8b949e">expect(out).</tspan><tspan fill="#a371f7">toBeValidJSON</tspan><tspan fill="#8b949e">()</tspan></text>
+  <text x="906" y="188" font-size="13" fill="#27c93f">✓</text>
+  <text x="532" y="214" font-size="13"><tspan fill="#8b949e">expect(out).</tspan><tspan fill="#a371f7">toMatchSchema</tspan><tspan fill="#8b949e">(S)</tspan></text>
+  <text x="906" y="214" font-size="13" fill="#27c93f">✓</text>
+  <text x="532" y="240" font-size="13"><tspan fill="#8b949e">expect(s).</tspan><tspan fill="#a371f7">toBeOneOf</tspan><tspan fill="#8b949e">(set)</tspan></text>
+  <text x="906" y="240" font-size="13" fill="#27c93f">✓</text>
+  <text x="532" y="266" font-size="13"><tspan fill="#8b949e">expect(a).</tspan><tspan fill="#a371f7">toContainNone</tspan><tspan fill="#8b949e">(bad)</tspan></text>
+  <text x="906" y="266" font-size="13" fill="#27c93f">✓</text>
+
+  <text x="532" y="298" font-size="13"><tspan fill="#27c93f">✓ 4 passed</tspan><tspan fill="#6e7681">  ·  0 model calls</tspan></text>
+</svg>

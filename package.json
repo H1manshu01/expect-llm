@@ -1,0 +1,95 @@
+{
+  "name": "expect-llm",
+  "version": "0.1.0",
+  "description": "Zero-dependency Vitest/Jest matchers for LLM output — assert valid JSON, schema shape, required content, structured snapshots, and an optional bring-your-own judge, in the test runner you already use.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Himanshu Sharma",
+  "sideEffects": false,
+  "keywords": [
+    "vitest",
+    "jest",
+    "expect",
+    "matchers",
+    "assertions",
+    "llm",
+    "ai",
+    "testing",
+    "eval",
+    "zod",
+    "json",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H1manshu01/expect-llm.git"
+  },
+  "homepage": "https://github.com/H1manshu01/expect-llm#readme",
+  "bugs": {
+    "url": "https://github.com/H1manshu01/expect-llm/issues"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./jest": {
+      "types": "./dist/jest.d.ts",
+      "import": "./dist/jest.js",
+      "require": "./dist/jest.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "size": "size-limit",
+    "smoke": "node scripts/smoke.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "jest": ">=29",
+    "vitest": ">=1",
+    "zod": ">=3"
+  },
+  "peerDependenciesMeta": {
+    "jest": { "optional": true },
+    "vitest": { "optional": true },
+    "zod": { "optional": true }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@size-limit/preset-small-lib": "^11.1.6",
+    "@types/node": "^22.20.5",
+    "size-limit": "^11.1.6",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.11",
+    "zod": "^3.24.1"
+  },
+  "overrides": {
+    "esbuild": "^0.28.2",
+    "vite": "^6.4.4"
+  },
+  "size-limit": [
+    {
+      "name": "core matchers (deterministic)",
+      "path": "dist/index.js",
+      "limit": "3 kB"
+    }
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
